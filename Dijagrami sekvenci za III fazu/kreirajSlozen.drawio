@@ -1,0 +1,108 @@
+<mxfile host="app.diagrams.net" modified="2023-04-10T17:12:53.135Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="-w0UvzfpY9SFnzW8LXlP" version="21.1.2" type="device">
+  <diagram id="kgpKYQtTHZ0yAKxKKP6v" name="Page-1">
+    <mxGraphModel dx="910" dy="483" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-1" value="sc:ServerController" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="70" width="110" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-5" value="aso:SOAddVinarija" style="shape=umlLifeline;perimeter=lifelinePerimeter;container=1;collapsible=0;recursiveResize=0;rounded=0;shadow=0;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="340" y="70" width="160" height="310" as="geometry" />
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-6" value="validate(AbstractDomainObject)" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;" parent="3nuBFxr9cyL0pnOWT2aG-5" edge="1">
+          <mxGeometry x="-0.1111" relative="1" as="geometry">
+            <mxPoint x="80" y="100" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="120" y="100" />
+              <mxPoint x="120" y="110" />
+            </Array>
+            <mxPoint x="80" y="110" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3nuBFxr9cyL0pnOWT2aG-8" value="templateExecute(Vinarija)" style="verticalAlign=bottom;endArrow=block;shadow=0;strokeWidth=1;" parent="1" target="3nuBFxr9cyL0pnOWT2aG-5" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="160.0000000000001" as="sourcePoint" />
+            <mxPoint x="405" y="160.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-12" value="dbb:DBBroker" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="600" y="70" width="100" height="300" as="geometry" />
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-13" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="120" y="97" as="sourcePoint" />
+            <mxPoint x="230" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="120" y="100" />
+              <mxPoint x="130" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-16" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="650" y="100" as="sourcePoint" />
+            <mxPoint x="650" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="610" y="100" />
+              <mxPoint x="690" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-19" value="signal,preparedStatement" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;entryX=0.501;entryY=0.597;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.475;exitY=0.617;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ZXANvao3_PfWXw138Ir_-12" target="3nuBFxr9cyL0pnOWT2aG-5" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="300" as="sourcePoint" />
+            <mxPoint x="480" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-20" value="insert(AbstractDomainObject)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" parent="1" target="ZXANvao3_PfWXw138Ir_-12" edge="1">
+          <mxGeometry x="0.0021" width="80" relative="1" as="geometry">
+            <mxPoint x="410" y="240" as="sourcePoint" />
+            <mxPoint x="440" y="300" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="530" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-14" value="" style="endArrow=none;html=1;rounded=0;" parent="1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="350" y="99" as="sourcePoint" />
+            <mxPoint x="490" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-21" value="for" style="shape=umlFrame;whiteSpace=wrap;html=1;width=40;height=20;" parent="1" vertex="1">
+          <mxGeometry x="370" y="280" width="290" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-25" value="[za sve stavke List&amp;lt;Vino&amp;gt;]" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="430" y="280" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-26" value="insert(Vino)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" parent="1" edge="1">
+          <mxGeometry x="0.4091" width="80" relative="1" as="geometry">
+            <mxPoint x="630" y="320" as="sourcePoint" />
+            <mxPoint x="650" y="320" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="630" y="320" />
+              <mxPoint x="420" y="320" />
+              <mxPoint x="650" y="320" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-27" value="signal" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;entryX=0.531;entryY=0.937;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.49;exitY=0.934;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="3nuBFxr9cyL0pnOWT2aG-5" target="3nuBFxr9cyL0pnOWT2aG-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="440" y="280" as="sourcePoint" />
+            <mxPoint x="360" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ZXANvao3_PfWXw138Ir_-29" value="signal" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;exitX=0.966;exitY=0.857;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="ZXANvao3_PfWXw138Ir_-21" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="280" as="sourcePoint" />
+            <mxPoint x="420" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
